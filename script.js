@@ -1,6 +1,6 @@
 const log = console.log;
 const variables = {
-  githubToken: "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",
+  githubToken: "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",
   githubLogin: "Dukesanmi",
   //reposToFetch: 20
 }
