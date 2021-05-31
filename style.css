@@ -1,0 +1,1497 @@
+body {
+  color: #24292e;
+  font-family: Sans-Serif;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+#app {
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: 0.01fr 4.98fr 0.3fr;
+}
+
+/*Navbar*/
+/*header {
+}*/
+#myNav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background: #24292e;
+  /*width: 120vw;*/
+  width: 102%;
+  padding: 7px;
+  margin-top: -10px;
+  margin-left: -0.5em;
+}
+#part-1 {
+  display: flex;
+  flex-direction: row;
+}
+.fa-github {
+  z-index: 80;
+  font-size: 2rem;
+  position: relative;
+  top: 0.2em;
+  left: 0.8em;
+  cursor: pointer;
+}
+#search-mob {
+  display: none;
+}
+#search {
+  background: inherit;
+  color: #fff;
+  width: 270px;
+  height: 30.5px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  border-color: rgba(256, 256, 256, 0.2);
+  outline: none;
+  margin-left: 3em;
+  margin-top: 0.7em;
+  padding-left: 11px;
+}
+#search::placeholder {
+  color: rgba(209, 213, 218, 0.9);
+  font-weight: 400;
+}
+#search-click {
+  color: rgba(256, 256, 256, 0.3);
+  text-align: center;
+  margin-top: 0.75em;
+  margin-left: -2.5em;
+  position: relative;
+  top: 0.1em;
+  left: 0.7em;
+  height: 21px;
+  /*color-focus: #2188ff;
+  */
+}
+#header-1 {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  margin-left: 1em;
+}
+.ul-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: -2em;
+  position: relative;
+  top: 0.1em;
+}
+.ul-wrapper li {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 25px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.ul-wrapper li:first-child {
+  display: none;
+}
+.ul-wrapper li:hover {
+  color: rgba(209, 213, 218, 0.9);
+}
+.mob-li {
+  display: none;
+}
+#header-2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 15em;
+  margin-left: 24%;
+  margin-top: 1em;
+}
+#header-2 > div {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+.octicon-bell {
+  fill: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.octicon-bell:hover {
+  fill: rgba(209, 213, 218, 0.9);
+}
+#hd2-1 > .fa-circle {
+  font-size: 10px;
+  /*color: #1c7ff3;*?*/
+  color: #fff;
+  background: -webkit-linear-gradient(#54a3ff, #006eed);
+  background: linear-gradient(#54a3ff, #006eed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: -0.8em;
+  margin-left: -0.9em;
+  border: 2px solid #24292e;
+  border-radius: 50%;
+  height: 42%;
+}
+#hd2-2 {
+  display: flex;
+  flex-direction: row;
+}
+#hd2-2:hover, .octicon-plus:hover {
+  fill: rgba(209, 213, 218, 0.9);
+  color: rgba(209, 213, 218, 0.9);
+}
+.octicon-plus {
+  fill: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  /*position: relative;
+  top: 0.5em;*/
+}
+/*.octicon-plus:hover {
+  fill: rgba(209, 213, 218, 0.9);
+}*/
+.fa-caret-down {
+  font-size: 2vh;
+  margin-top: 0.4em;
+  margin-left: 0.3em;
+}
+#hd2-3:hover {
+  fill: rgba(209, 213, 218, 0.9);
+  color: rgba(209, 213, 218, 0.9); 
+}
+#avi-sm {
+  margin-top: -2px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#user-id {
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+}
+#hd2-2 > .fa-caret-down {
+  margin-left: 0.45em;
+}
+#hd2-3 > .fa-caret-down {
+  margin-top: 0.35em;
+  margin-left: 0.5em;
+}
+.res-icon {
+  text-decoration: none;
+  display: none;
+  color: silver;
+}
+
+/*Main*/
+/*#main-tent {
+  position: relative;
+  bottom: 25px;
+
+}*/
+main {
+  width: 101.15%;
+  margin: 0 0 0 -0.5em;
+  /*border: 1px solid red;*/
+}
+.index-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 2em;
+}
+.index-main h1 {
+  font-size: 60px;
+}
+.index-main p {
+  color: #586069; 
+  width: 80%;
+  font-size: 25px;
+  margin-top: -1.5em;
+}
+.index-main input {
+  display: none;
+}
+.index-main a {
+  text-decoration: none;
+  width: 23%;
+  font-size: 25px;
+  font-weight: 400;
+  color: #24292e 
+}
+.index-main a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #24292e; 
+}
+.main-top-hr {
+  width: 100%;
+  color: rgba(36, 41, 46, 0.1);
+  opacity: 0.2;
+  position: relative;
+  top: 5.4em
+}
+section {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr;
+  margin-top: -0.5em;
+}
+.col-1 {
+  /*border: 2px solid orange;*/
+  max-height: 100%;
+  width: 100% 
+}
+.col-1-wrapper {
+  margin-top: 5em;
+  margin-left: 5.6em;
+}
+.col-1-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 35px;
+}
+.col-1-wrapper > img {
+  width: 290px;
+  border-radius: 50%;
+}
+#smile {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ccc;
+  position: relative;
+  bottom: 85px;
+  left: 256px;
+}
+#smile > span {
+  display: none;
+}
+.fa-smile {
+  background-color: #fff;
+  color:  #24292e;
+  opacity: 0.8;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#profile-text > #name {
+  margin-top: -0.8em;
+  margin-bottom: -0.55em;
+  font-size: 26px;
+  font-weight: 600;
+}
+#profile-text #username {
+  font-size: 21px;
+  opacity: 0.5;
+  font-weight: 200;
+}
+.col-2 {
+  /*border: 2px solid blue;*/
+  max-height: 100%;
+  width: 100%;
+}
+.col-2 nav {
+  /*display: flex;
+  flex-wrap: nowrap;*/
+  position: relative;
+  top: 3em;
+  left: 0.8em;
+}
+.col-2 nav a {
+  font-size: 13px;
+  /*margin-left: 1.4em;*/
+  color: #24292e;
+  text-decoration: none;
+  border: none;
+  padding: 1.1em 1.35em;
+}
+.col-2 nav a:hover {
+  border-bottom: 2.7px solid #d1d5da;
+  /*border: 2.8px solid #8b949e;
+  /*border-bottom: 2.5px solid rgba(139, 148, 158, 0.7);*/
+}
+.col-2 nav a svg {
+  position: relative;
+  top: 0.3em;
+  margin-right: 0.5em;
+  opacity: 0.5
+}
+.col-2 nav a[type="active"] {
+  border-bottom: 2.8px solid #f9826c;
+  font-weight: 600;
+}
+.col-2 nav a[type="active"] svg {
+  opacity: 1;
+  font-weight: 600;
+}
+.counter {
+  font-weight: 400;
+  padding: 2px 6px;
+  border-radius: 2em;
+  background-color: rgba(209, 213, 218, 0.5);
+}
+#work {
+  position: relative;
+  top: 5.1em;
+  /*margin-left: 1em;*/
+}
+#find-repo {
+  /*display: none;*/
+  background: inherit;
+  color: #24292e;
+  width: 88%;
+  height: 33px;
+  border: 1.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+}
+#work .under-s-hr {
+  width: 90%;
+  text-align: left;
+  margin: 1em 0 0 0em;
+  opacity: 0.3
+}
+#searched {
+  font-size: 13px;
+}
+#searched-u {
+  width: 30%; 
+  text-align: left;
+  margin-left: 0em; 
+  opacity: 0.3;
+}
+
+/*For repo later*/  
+#repo {
+  /*border: 1px solid red;*/
+  width: 90%;
+}
+#repo > .repo-card {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  /*color: #4b4c4d;*/
+  border-bottom: 1px solid #e1e4e8;
+  max-height: 250px;
+}
+.repo-card > button {
+  float: right;
+  height: 50%;
+  color: #24292e;
+  position: relative;
+  left: 12.8em;
+  top: 2em;
+  /*margin-left: 10em;*/
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  background-color: #fafbfc;
+  /*background-color: #fafbfd;*/
+  /* box-shadow: 0 0 1.2px; rgba(256, 256, 256, 0.6);*/
+  outline: none;
+  cursor: pointer;
+}
+.repo-card > button:hover {
+  background-color: #f3f4f6;
+  transition: background .1s ease;
+}
+.repo-card > button > .fa-star {
+  margin-right: 0.6em;
+  color: #6a737d;
+  font-weight: 500;
+}
+.repo-data {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 600px;
+  /*margin-bottom: -0.15em;*/
+  margin-left: -1.2em;
+}
+.repo-data > h2 {
+  margin-bottom: -0.15em;
+  text-decoration: none;
+  font-size: 20px;
+}
+.repo-data > h2 > a {
+  color: #0866d1;
+  text-decoration: none;
+}
+.repo-name {
+  text-decoration: none;
+}
+.repo-name, .repo-description {
+  margin-left: -0.15em;
+}
+.repo-description{
+  line-height: 20px;
+}
+.repo-data > p {
+  color: #586069;
+  margin-bottom: -0.15em;
+  font-size: 13.5px;
+}
+.repo-meta {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0.5em;
+}
+.repo-meta > p {
+  color: #586069;
+  margin-left: 1.3em;
+  font-size: 12px;
+}
+.repo-meta >.fa-circle {
+  border: none;
+}
+.lang-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: -0.158em;
+}
+.lang {
+  position: relative;
+  top: 0.5em;
+  left: 0.05em;
+  color: #586069;
+  font-size: 12px
+}
+.lang-container > .fa-circle {
+  position: relative;
+  top: 26px;
+  margin-right: 0.2em;
+  margin-top: -0.55em;
+  height: 60%;
+  font-size: 12px;
+}
+.countable-p {
+  font-size: 12px;
+  position: relative;
+  bottom: 4px;
+}
+.countable-icon {
+  font-size: 12px;
+  margin-right: 0.2em;
+}
+.license {
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+  left: 0.5em;
+  /*bottom: 11px;*/
+}
+.octicon-law {
+  position: relative;
+  top: 3px;
+  margin-right: 0.5em;
+  fill: #586069;
+}
+.last-update {
+  position: relative;
+  top: 7px;
+  left: 0.5em;
+}
+
+/*Footer*/
+footer {
+ margin-top: 2em;
+ /*border: 1px solid green;*/
+}
+footer > hr {
+  opacity:0.3; 
+  width: 98%; 
+  /*margin-left: 1.7em;*/
+}
+#footer-elems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: -2.5em;
+  margin-top: 2em;
+  /*margin-bottom: 2em;*/
+}
+.ft {
+  display: flex;
+  flex-direction: row;
+}
+.ft > p {
+  color: #586069;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5em;
+}
+.ft p > a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.ft p > a:hover {
+  text-decoration: underline;
+}
+.footer-octicon {
+  margin-left: 4em;
+  margin-top: 0.3em;
+  opacity: 0.2;
+}
+.footer-octicon:hover {
+  opacity: 0.5
+}
+#footer-elems > p {
+  margin-right: 1em;
+}
+#footer-elems > a {
+  text-decoration: none;
+  color: #0866d1;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 1370px) {
+  #app {
+    max-height: 100%;
+  }
+  #myNav {
+    width: 102.5%;
+  }
+  #header-2 {
+    margin-left: 20%;
+  }
+  .fa-caret-down {
+    font-size: 1.4vh;
+    margin-top: 0em;
+  }
+}
+@media screen and (max-width: 1290px) {
+  main {
+    max-height: 100%;
+  }
+  #header-2 {
+    margin-left: 14.4%;
+  }
+  .fa-caret-down {
+    font-size: 1.5vh;
+  }
+  .index-main {
+    margin-top: 7em;
+    margin-bottom: 10em;
+  }
+  .index-main h1 {
+    font-size: 50px;
+  }
+  .index-main p { 
+    width: 80%;
+    font-size: 25px;
+    margin-top: -1em;
+  }
+  .index-main input {
+    display: none;
+  }
+  .index-main a {
+    width: 25%; 
+  }
+  #work {
+    margin-left: 1em;
+  }
+  .repo-card > button {
+    left: 7.8em;
+  }
+  footer {
+    margin-top: -1em;
+  }
+  #footer-elems {
+    margin-left: 0em;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-octicon {
+    /*display: none;*/
+    margin-right: 2.5em
+  }
+  .ft > p {
+    margin-left: 3.5em;
+    font-size: 12px
+  }
+}
+@media screen and (max-width: 1030px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    /*border: 1px solid blue;*/
+  }
+  #myNav {
+    width: 100.57vw;
+    margin-left: -1em;
+  }
+  #header-2 {
+    margin-left: -4em;
+  }
+  .fa-caret-down {
+    font-size: 0.8vh;
+    margin-top: 0em;
+  }
+  .index-main p { 
+    width: 80%;
+    font-size: 25px;
+    margin-top: -1em;
+  }
+  .index-main a {
+    width: 31%;
+  }
+  .col-1 {
+    /*border: 2px solid orange;*/
+    max-height: 100%;
+    width: 100% 
+  }
+  .col-1-wrapper > img {
+    width: 100%;
+  }
+  #smile {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    bottom: 45px;
+    left: 125px;
+  }
+  .fa-smile { 
+    font-size: 0.9rem;
+  }
+  .col-2 {
+    /*border: 2px solid blue;*/
+    width: 100%;
+  }
+  .col-2 nav a {
+    font-size: 12px;
+    padding: 1.1em 1.1em;
+  }
+
+  #work {
+    margin-left: 1em;
+  }
+  #find-repo {
+    width: 98%;
+  }
+  #work .under-s-hr {
+    width: 95%;
+  }
+  
+  #repo {
+    /*border: 1px solid red;*/
+    width: 100%;
+  }
+  .repo-card > button {
+    position: relative;
+    left: 0.4em;
+    font-size: 12px;
+    width: 75px;
+    border-radius: 7px;  
+  }
+  .repo-description {
+    width: 85%;
+  }
+  .lang-container {
+    margin-top: 0.05em;
+  }
+  .footer-octicon {
+    /*display: none;*/
+    margin-right: 2.6em
+  }
+  .ft > p {
+    margin-left: 2.5em;
+    font-size: 11px
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+      width: 100%;
+  }
+  #myNav {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0em;
+  }
+  #part-1 {
+    /*border: 1px solid white;*/
+    margin-left: -1em;
+  }
+  .fa-github {
+    font-size: 1.85rem;
+    top: 0.3em;
+    left: 0.5em
+  }
+  #search {
+    width: 240px;
+    height: 26.5px;
+    border-radius: 4px;
+    margin-left: 2em;
+    margin-top: 0.7em;
+    padding-left: 9px;
+  }
+  #search::placeholder {
+    font-size: 12px;  
+  }
+  #search-click {
+    margin-left: -2.25em;
+    position: relative;
+    top: 0.04em;
+    height: 18px;
+    width: 18px;  
+  }
+  .ul-wrapper {
+    margin-left: 0.65em;
+    margin-top: -0.05em;
+  }
+  .ul-wrapper li {
+    font-size: 14px;
+    margin-left: 16px;
+  }
+  .ul-wrapper li:first-child {
+    display: inline;
+  }
+  .ul-wrapper li:nth-child(3) {
+    display: none;
+  }
+  #header-2 {
+    margin-left: -13.1em;
+  }
+  .fa-caret-down {
+    font-size: 1vh;
+  }
+  main {
+    width: 75%;
+  }
+  .index-main {
+    width: 100%
+  }
+  .index-main p { 
+    font-size: 24px;
+  }
+  .index-main a {
+    width: 43%;
+  }
+  .col-1 {
+    /*border: 2px solid orange;*/
+    width: 78%;
+  }
+  .col-1-wrapper {
+    position: relative;
+    right: 4em
+  }
+  .col-1-wrapper > img {
+    width: 190px;
+  }
+  #smile {
+    bottom: 65px;
+    left: 160px;
+  }
+  .col-2 {
+    /*border: 2px solid blue;*/
+    width: 73%;
+    position: relative;
+    right: 2.9em;
+  }
+  #work {
+    margin-left: 0.8em;
+  }
+  #find-repo {
+    width: 90%;
+  }
+  .repo-description {
+    line-height: 20px;
+  }
+  .repo-card > button {
+    position: relative;
+    top: 3.5em;
+    width: 95px;
+    margin-left: -0.5em  
+  }
+  #footer-elems {
+    width: 90%;
+    margin-left: 2em;
+  }
+  .footer-octicon {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-rows: 0.01fr 4.98fr 0.3fr;*/
+  }
+  header {
+    margin: 0;
+    padding: 0
+    /*margin-left: -0.5em;*/
+  }
+  #myNav {
+  width: 107.6%;
+  /*margin-top: -10px;*/
+  margin-left: -1em;
+  }
+  #part-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-github {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 0.08em;
+    margin-left: -0.5em;
+    /*left: 3.5em*/
+  }
+  #search-mob {
+    display: block;
+    visibility: hidden;
+    background: inherit;
+    color: #fff;
+    width: 375px;
+    /*height: 33.5px;*/
+    height: 0px;
+    margin-left: 3.3em;
+    margin-top: 0.8em;/*-0.9*/
+    margin-bottom: -0.5em;/*to be removed*/
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgba(256, 256, 256, 0.2);
+    outline: none;
+    padding-left: 11px;
+  }
+  #search-mob::placeholder {
+    color: rgba(209, 213, 218, 0.9);
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #search {
+    display: none;
+  }
+  #search-click {
+    display: none;
+  }
+  #header-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+  }
+  .ul-wrapper ul {
+    display: none;
+    flex-direction: column;
+    /*margin-left: -2em;
+    position: relative;
+    top: 0.1em;*/
+  }
+  .mob-li {
+    display: inline-block;
+  }
+  .ul-wrapper li {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+    padding: 11px 10px 11px 6px;
+    position: relative;
+    right: 0.26em;
+    /*font-size: 13px;*/
+    /*margin-left: -0.26em;*/
+  }
+  .ul-wrapper li:first-child {
+    display: none;
+  }
+  .ul-wrapper li:nth-child(2) {
+    border-top: 1px solid rgba(256, 256, 256, 0.2);
+  }
+  .ul-wrapper li:nth-child(3) {
+    display: inline-block;
+  }
+  .user-avi-id {
+    display: flex;
+    flex-direction: row;
+  }
+  #header-2 {
+    display: block;
+    left: 9.5em;
+    bottom: 0.1em;
+  }
+  #hd2-2, #hd2-2 > * {
+    display: none;
+  }
+  #hd2-3, #hd2-3 > * {
+    display: none;
+  }
+  .res-icon {
+    height: 30px;
+    display: block;
+    font-size: 25px;
+    position: relative;
+    right: 8.75em; 
+    top: 0.2em;
+    z-index: 800;
+  }
+  main {
+    width: 100%;
+    overflow: visible;
+  }
+  .index-main h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .index-main p { 
+    width: 90%;
+    text-align: center;
+    font-size: 21px;
+    margin-top: -0.5em;
+    margin-left: 0;
+  }
+  .index-main input {
+    display: none;
+  }
+  .index-main a {
+    border: 2px solid #24292e;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 18px;
+    width: 65%;
+    margin: auto; 
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-top-hr {
+    display: none;
+  }
+  .col-1-wrapper {
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid red;*/
+    max-height: 100%;
+    margin-top: 4em;
+    margin-left: 5em;
+  }
+  .col-1-wrapper > img {
+    width: 65px;
+    height: 65px;
+  }
+  #smile {
+    display: flex;
+    justify-content: flex-start;
+    width: 365px;
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 #ccc;
+    padding-left: 10px;
+    position: absolute;
+    top: 6.5em;
+    left: 0.09em;
+    /*margin-top: 5em;*/
+  }
+  #smile > span {
+    display: inline-block;
+    margin-left: 0.5em;
+    color: #24292e;
+    opacity: 0.8;
+    font-size: 12px;
+  }
+  #profile-text {
+    margin-left: 1em;
+    margin-top: 1.5em;
+    width: 100%
+  }
+  #profile-text > #name {
+    font-size: 25px;
+  }
+  #profile-text #username {
+    font-size: 19.5px;
+    margin-top: 0.8em;
+  }
+  #profile-text #description {
+    position: relative;
+    top: 4.9em;
+    right: 5em;
+    margin-top: 0em;
+    width: 300px;
+  }
+  .col-2 {
+    /*border: 2px solid blue;*/
+    margin-left: 3em;
+    width: 98.6%;
+  }
+  .col-2 nav {
+    display: flex;
+    flex-wrap: nowrap;
+    top: 4em;
+    left: 0.8em;
+  }
+  .col-2 nav a svg {
+    display: none;
+  }
+  #find-repo {
+    width: 101.3%;
+    height: 33px;
+    border: 1.1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 16px;
+  }
+  #work .under-s-hr {
+    width: 100%;
+    text-align: left;
+    margin: 1em 0 0 0em;
+    opacity: 0.3
+  }
+  #searched {
+    font-size: 12px;
+  }
+  #searched-u {
+    width: 50%; 
+    margin-left: 0em; 
+  }
+
+  /*For repo later*/  
+  #repo {
+    /*border: 1px solid green;*/
+    width: 99%;
+    max-height: 100%;
+  }
+  #repo > .repo-card {
+    padding: 20px;
+    /*width: 370px;*/
+  }
+  .repo-card > button {
+    position: relative;
+    left: 0.8em;
+    top: 3em;
+    width: 130px;
+    padding: 8px 12px;
+    border-radius: 7px;
+  }
+  .repo-data > h2 {
+    font-size: 19px;
+    width: 90%;
+  }
+  .repo-data > p {
+    font-size: 13.6px;
+  }
+  footer {
+    margin-top: 11em;
+  }
+  footer > hr {
+    width: 95%;
+  }
+  #footer-elems {
+    width: 90%;
+    margin-left: 0em;
+  }
+  .ft > p {
+    font-size: 12px
+  }
+}
+@media screen and (max-width: 480px) {
+  .responsive #myNav {
+    width: 100.6%;
+    /*margin-top: -10px;*/
+    margin-left: -1em;
+  }
+  .responsive #part-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive .fa-github {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 0.11em;
+    left: 1em
+  }
+  .responsive .res-icon {
+    position: relative;
+    right: 7.55em; 
+    top: 0.2em;
+  }
+  .responsive #header-2 {
+    left: 11.38em;
+    /*bottom: 0.1em;*/
+  }
+  .responsive #search-mob {
+    display: block;
+    visibility: visible;
+    background: inherit;
+    color: #fff;
+    width: 345px;
+    height: 33px;
+    /*height: 0px;*/
+    margin-left: 3.3em;
+    margin-top: 1.8em;/*-0.9*/
+    margin-bottom: -0.5em;/*to be removed*/
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgba(256, 256, 256, 0.2);
+    outline: none;
+    padding-left: 11px;
+  }
+  .responsive #search-mob::placeholder {
+    color: rgba(209, 213, 218, 0.9);
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #search {
+    display: none;
+  }
+  #search-click {
+    display: none;
+  }
+  .responsive #header-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+  }
+  .responsive .ul-wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive .mob-li {
+    display: inline-block;
+  }
+  .responsive .ul-wrapper li {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+    padding: 11px 10px 11px 6px;
+    position: relative;
+    right: 0.26em;
+    /*font-size: 13px;*/
+    /*margin-left: -0.26em;*/
+  }
+  .responsive .ul-wrapper li:first-child {
+    display: none;
+  }
+  .responsive .ul-wrapper li:nth-child(2) {
+    border-top: 1px solid rgba(256, 256, 256, 0.2);
+  }
+  .responsive .ul-wrapper li:nth-child(3) {
+    display: inline-block;
+  }
+  .responsive .user-avi-id {
+    display: flex;
+    flex-direction: row;
+  }
+  .responsive #user-id {
+    display: inline-block;
+  }
+  .responsive #avi-sm-mob {
+    position: relative;
+    top: 11px;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    margin-left: 0.6em;
+  }
+  #myNav {
+    width: 105%;
+  }
+  .res-icon {
+    font-size: 23px;
+    right: 10em;
+    top: 0.1em;
+  }
+  .fa-github {
+    font-size: 1.8rem;
+    left: -0.7em;
+    top: 0.2em;
+  }
+  #header-2 {
+    left: 6.7em
+  }
+  .octicon-bell {
+    width: 16px;
+    height: 16px;
+  }
+  #hd2-1 > .fa-circle {
+    font-size: 9px;
+  }
+  #search-mob {
+    display: block;
+    visibility: hidden;
+    background: inherit;
+    color: #fff;
+    width: 375px;
+    /*height: 33.5px;*/
+    height: 0px;
+    margin-left: 3.3em;
+    margin-top: 0.8em;/*-0.9*/
+    margin-bottom: -0.5em;/*to be removed*/
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgba(256, 256, 256, 0.2);
+    outline: none;
+    padding-left: 11px;
+  }
+  #search-mob::placeholder {
+    font-size: 13px;
+  }
+  main {
+    width: 100%;
+    overflow: visible;
+  }
+  .index-main a {
+    width: 75%; 
+  }
+  section {
+    /*z-index: 199;*/
+    width: 100%;
+  }
+  #smile {
+    width: 320px;
+    top: 5.5em;
+  }
+  .fa-smile {
+    font-size: 100%
+  }
+  #smile > span {
+    font-size: 80%;
+  }
+  #profile-text > #name {
+    font-size: 23px;
+  }
+  #profile-text #username {
+    font-size: 17.5px;
+  }
+  #profile-text #description {
+    position: relative;
+    top: 4.8em;
+    right: 5.8em;
+    margin-top: 0em;
+    width: 300px;
+    font-size: 13.5px;
+  }
+  .col-2 {
+    /*border: 2px solid blue;*/
+    margin-left: 3em;
+    width: 98.6%;
+  }
+  .col-2 nav {
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+    top: 4em;
+    left: 0em;
+    width: 100%;
+  }
+  .col-2 nav a  {
+    display: inline-block;
+    font-size: 80%;
+  }
+  .col-2 nav a:nth-child(2) {
+    width: 162px;
+  }
+  #find-repo {
+    width: 100%;
+    padding-left: 10px;
+  }
+  #work .under-s-hr {
+    width: 98%;
+  }
+  #searched {
+    font-size: 12px;
+  }
+  #searched-u {
+    width: 55%; 
+  }
+
+  /*For repo later*/  
+  #repo {
+    /*border: 1px solid green;*/
+    width: 99%;
+    max-height: 100%;
+  }
+  #repo > .repo-card {
+    padding: 20px;
+    /*width: 370px;*/
+    max-height: 300px;
+  }
+  .repo-card > button {
+    position: relative;
+    left: 0.1em;
+    top: 3em;
+    width: 130px;
+    height: 60%;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 11px;
+  }
+  .repo-data > h2 {
+    font-size: 17.7px;
+    width: 90%;
+  }
+  .repo-description {
+    width: 75%;
+    font-size: 70%;
+    line-height: 21px;
+  }
+  .repo-data > p {
+    font-size: 12.5px;
+  }
+  .repo-meta {
+    width: 80%;
+    white-space: wrap;
+  }
+  .repo-meta > p {
+    font-size: 11px;
+  }
+  .lang {
+    font-size: 11px;
+  }
+  .lang-container > .fa-circle {
+    font-size: 11px;
+    margin-top: -9.5px;
+  }
+  .countable-p {
+    font-size: 11px;
+  }
+  .countable-icon {
+    font-size: 11px;
+  }
+  .license {
+    font-size: 11px;
+  }
+
+  footer {
+    margin-top: 8em;
+  }
+  footer > hr {
+    width: 93%;
+    margin-left: 0.55em;
+  }
+  #footer-elems {
+    width: 80%;
+    margin-left: 1em;
+  }
+  .ft > p {
+    font-size: 11px
+  }
+}
+@media screen and (max-width: 400px) {
+  .responsive .fa-github {
+    font-size: 1.8rem;
+    position: relative;
+    top: 0.2em;
+    left: 0.6em;
+  }
+  .responsive .res-icon {
+    position: relative;
+    right: 6.75em; 
+    top: 0.07em;
+  }
+  .responsive #header-2 {
+    left: 11.38em;
+    /*bottom: 0.1em;*/
+  }
+  .responsive #search-mob {
+    display: block;
+    visibility: visible;
+    background: inherit;
+    color: #fff;
+    width: 300px;
+    height: 31px;
+    /*height: 0px;*/
+    margin-left: 3.3em;
+    margin-top: 1.8em;/*-0.9*/
+    margin-bottom: -0.5em;/*to be removed*/
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgba(256, 256, 256, 0.2);
+    outline: none;
+    padding-left: 11px;
+  }
+  .responsive #search-mob::placeholder {
+    color: rgba(209, 213, 218, 0.9);
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #search {
+    display: none;
+  }
+  #search-click {
+    display: none;
+  }
+  .responsive #header-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0em;
+  }
+  .responsive .ul-wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive .mob-li {
+    display: inline-block;
+  }
+  .responsive .ul-wrapper li {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+    padding: 11px 10px 11px 6px;
+    position: relative;
+    right: 0.26em;
+    /*font-size: 13px;*/
+    /*margin-left: -0.26em;*/
+  }
+  .responsive .ul-wrapper li:first-child {
+    display: none;
+  }
+  .responsive .ul-wrapper li:nth-child(2) {
+    border-top: 1px solid rgba(256, 256, 256, 0.2);
+  }
+  .responsive .ul-wrapper li:nth-child(3) {
+    display: inline-block;
+  }
+  .responsive .user-avi-id {
+    display: flex;
+    flex-direction: row;
+  }
+  .responsive #user-id {
+    display: inline-block;
+  }
+  .responsive #avi-sm-mob {
+    position: relative;
+    top: 11px;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  body {
+    overflow: auto;
+  }
+  main {
+    overflow: visible;
+  }
+}
