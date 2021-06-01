@@ -35,4 +35,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
         env: 
-            GITHUB_PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  
+            PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  
