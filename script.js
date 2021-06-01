@@ -1,5 +1,6 @@
 const log = console.log;
-const githubToken = process.env.PERSONAL_ACCESS_TOKEN
+const githubToken = process.env.PERSONAL_ACCESS_TOKEN;
+log(githubToken);
 /*const variables = {
   githubToken: process.env.PERSONAL_ACCESS_TOKEN,
   githubLogin: "Dukesanmi",
