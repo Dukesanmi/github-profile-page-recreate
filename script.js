@@ -60,7 +60,7 @@ const queryProfile = {
 const url = "https://api.github.com/graphql";
 const headers = {
   "Content-type": "application/json",
-  "Authorization": "bearer " + variables.githubToken
+  "Authorization": "bearer " + githubToken
 }
 var profileData;
 var repoData;
@@ -158,7 +158,7 @@ log('code check 1');
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(queryProfile),
-    headers: {'Content-Type': 'application/json', Authorization: "bearer " + variables.githubToken}
+    headers: {'Content-Type': 'application/json', Authorization: "bearer " + githubToken}
   });
   const json = await response.json();
   profileData = json.data;
@@ -180,7 +180,7 @@ log('code check 1');
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(queryRepo),
-    headers: {'Content-Type': 'application/json', Authorization: "bearer " + variables.githubToken}
+    headers: {'Content-Type': 'application/json', Authorization: "bearer " + githubToken}
   });
   const json = await response.json();
   repoData = json.data.viewer.repositories.nodes;
