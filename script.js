@@ -1,5 +1,4 @@
 const log = console.log;
-log(githubToken);
 const variables = {
   githubToken: JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN),
   githubLogin: "Dukesanmi",
