@@ -1,11 +1,10 @@
 const log = console.log;
-const githubToken = process.env.PERSONAL_ACCESS_TOKEN;
 log(githubToken);
-/*const variables = {
-  githubToken: process.env.PERSONAL_ACCESS_TOKEN,
+const variables = {
+  githubToken: JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN),
   githubLogin: "Dukesanmi",
   //reposToFetch: 20
-}*/
+}
 //const fetch = require('node-fetch');
 const queryRepo = {
  "query": `
@@ -61,7 +60,7 @@ const queryProfile = {
 const url = "https://api.github.com/graphql";
 const headers = {
   "Content-type": "application/json",
-  "Authorization": "bearer " + githubToken
+  "Authorization": "bearer " + variables.githubToken
 }
 var profileData;
 var repoData;
@@ -159,7 +158,7 @@ log('code check 1');
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(queryProfile),
-    headers: {'Content-Type': 'application/json', Authorization: "bearer " + githubToken}
+    headers: {'Content-Type': 'application/json', Authorization: "bearer " + variables.githubToken}
   });
   const json = await response.json();
   profileData = json.data;
@@ -181,12 +180,12 @@ log('code check 1');
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(queryRepo),
-    headers: {'Content-Type': 'application/json', Authorization: "bearer " + githubToken}
+    headers: {'Content-Type': 'application/json', Authorization: "bearer " + variables.githubToken}
   });
   const json = await response.json();
   repoData = json.data.viewer.repositories.nodes;
   var publicRepo = repoData.filter(repo => repo.isPrivate === false);
- log('code check 3 repo fetch function');
+  log('code check 3 repo fetch function');
  //log(publicRepo);
 
  //Cards
