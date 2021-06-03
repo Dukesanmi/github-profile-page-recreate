@@ -1,10 +1,10 @@
 const log = console.log;
-const githubToken = JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN);
-/*const variables = {
-  "githubToken": JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN),
+//const githubToken = JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN);
+const variables = {
+  "githubToken": process.env.GITHUB_TOKEN,
   "githubLogin": "Dukesanmi",
   //reposToFetch: 20
-}*/
+}
 //const fetch = require('node-fetch');
 const queryRepo = {
  "query": `
