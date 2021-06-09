@@ -1,7 +1,6 @@
-import TOKEN from config.js;
+import TOKEN from 'config.js';
 
 const log = console.log;
-//const githubToken = JSON.Stringify(process.env.PERSONAL_ACCESS_TOKEN);
 const variables = {
   "githubToken": TOKEN,
   "githubLogin": "Dukesanmi",
